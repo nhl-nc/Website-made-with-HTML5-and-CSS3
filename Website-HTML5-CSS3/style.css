@@ -1,0 +1,323 @@
+*{
+	
+	box-sizing: border-box; /*  yükseklik genişlik sabitleme + resme  sınır gölge eklediğinde resim boyutu aynı kalıyor büyüklük onun üstüne ekleneiyor*/
+	
+	
+}
+/**/
+body{
+	
+	margin:0;  /*boşluk istemiyorum   */
+	padding:0;
+	background-color: #d1e0e0;
+	font-family: 'Source Serif Pro', serif;
+}
+
+#social{
+	
+	background-color: #bfbfbf;
+	color:black;
+	height:50px;
+	width:100%;
+	position:sticky;  /*barı aşağı indikçe sabit tutmak için   */
+	top:0;
+	z-index: 1; /*sayfadaki şeyer üstüne çıkmasın diye  */
+	font-size:18px;  /*yazılar için aşağıdaki 3 şeyde öyle   */
+	text-align: right;  /* yazıları font ile ayırfık ikonlar için bunu kullandık */
+	padding:15px;
+	
+}
+
+
+#desen{
+	
+	float:left;
+	letter-spacing: 2px;
+	transform: translate(0%,-5%);
+			
+}
+
+#span{
+	
+	font-size: 12px;
+	letter-spacing: 1px;
+	
+}
+
+#social>i{ /*socialın altında bulunan şeylere müdahale etmek için kullanıyoruz*/
+	
+	margin-right:15px;
+	
+	
+}
+
+ a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity:0.5;
+}
+ a:active {
+  color: yellow;
+  background-color: transparent;
+}
+
+#container{
+	
+	width:80%;
+	margin:auto; /*sol ve sağ boşlukları eşit olması için*/
+	height:auto;/* gelecek içeriğe göre yükseklik ayarlama*/
+}
+ header{/*herhangi bir ıd ye sahip değil o yüzden direkt yazıyorum*/
+	 
+	width:100%;
+    height:250px;
+	box-shadow:0 2px 8px 2px rgba(20, 23, 28, 15);/* 8 px bulanıklık 2px bulanıklık dağıtma diğeride renk*/
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;/*eğer koymazsak gölge kenarlığın dışından oluyor*/
+	position: relative; /* yazının resme göre ortalanabilmesi için*/
+	margin-bottom: 5px;
+	
+ }
+ 
+#headerImg{
+	
+	width:100%;
+	height:250px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	opacity: 0.8;
+	
+}
+
+#center{
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%,-50%); /*tam ortalamak için kullanıyoruz*/
+	color:white;
+	
+}
+
+section{
+	
+	width:100%;
+	height: auto;
+	background-color: #ced7e3;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	box-shadow:0 2px 8px 2px rgba(20, 23, 28, 15);
+	margin-top: 15px;
+	overflow: auto; /*nav ı sectionun içine sığdırıyor*/
+}
+
+nav{
+	width: 100%;
+	height: auto;
+	
+
+}
+
+nav ul{
+	width: 100%;
+	height: 100%;
+	display:inline-block;
+	border-radius: 10px;
+	background-color: #577399;
+	margin: 0;
+	padding:0;
+	text-align: center;
+	
+
+		
+}
+
+nav li{
+	width:32.5%;
+	list-style-type: none;
+	display:inline-block;
+	border: 1px solid #577399 ;
+	border-radius: 10px;
+	
+}
+
+nav li a{
+	width: 100%;
+	height:50px;
+	line-height: 50px;
+	text-decoration:none;
+	color:black;
+	
+	
+	
+}
+
+nav li:hover{
+	
+	color:white;
+	opacity: 0.5;
+	
+}
+
+i{
+	margin-right: 10px;
+	
+}
+
+main{
+
+	height:auto;
+	width:100%;
+	padding: 10px;
+	float:left;/* soldan ilerlemisini sağlar */
+	
+	
+}
+
+.icerik{
+	width:100%;
+	height:auto;
+	display:inline-block;/*ne demek*/
+	border-radius: 10px;
+  
+	margin-top:10px;
+
+}
+
+
+
+
+
+
+
+.rsm{
+	width:100%;
+	height:250px;/*içinde bulunduğu etikete göre boyutunu ayarlasın*/
+
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	transition: opacity 0.8s; /*var olan değer 0.8 saniyede 0.6 ya düşecek*/
+}
+.rsm:hover{
+	opacity: 0.6;
+}
+
+h5{
+	margin:10px;
+	color:black;
+	
+}
+
+.iceriktext{
+	
+	margin:10px;
+	color:black;
+}
+
+table, th, td {
+	 
+	 border: 1px solid black;
+	  
+	 }
+	 
+tr:hover {background-color: #D6EEEE;}
+
+footer{
+	width:100%;
+	height:55px;
+	background-color:#666666;
+	color:white;
+	line-height:55px;/*dikeyde ortalama yükseklik ne ise onu veriyoruz*/
+	text-align:center;
+	box-shadow:0 2px 8px 2px rgba(20, 23, 28, 15);
+	
+	
+}
+
+
+h1{
+	text-align:center;
+	background-color:#ceabb1;
+	color:white;
+	height:50px;
+	line-height: 50px;
+	margin:0 10px;
+	border-radius: 10px;
+	box-shadow:0 2px 8px 2px rgba(20, 23, 28, 15);
+	
+	
+}
+#hakkimizdarsm{
+	width:250px;
+	height:265px;
+	float:left;
+	border-radius:10px;
+	margin:25px;
+	margin-bottom:10px;
+}
+
+#haklist{
+	
+	font-size: 15px;
+	font-family: 'Source Serif Pro', serif;
+	color: #494949;
+	
+	
+}
+
+
+.hakyazi{
+	
+	margin-right:15px;
+	font-size: 15px;
+	font-family: 'Source Serif Pro', serif;
+	text-indent: 40px; /*satır başı sağlıyor*/
+	color: #494949;
+}
+
+.galresim{
+	width:23%;
+	height:150px;
+	border-radius:5px;
+	opacity:0.8;
+	box-shadow:0 2px 8px 2px rgba(20, 23, 28, 15);
+	margin: 10px;
+	transition: all 0.6s; /* üstüne gelince her şey overa göre oluyor*/
+		
+}
+
+.galresim:hover{
+	opacity:1;
+	border:5px solid white;
+	cursor:pointer;/* ok işareti el işareti olsun*/
+	object-fit: cover;  /*resmin oranını korumayı sağlar*/
+}
+
+.link:link{
+	
+	text-decoration:none;/*aralardaki mavi yerleri düzeltmek için*/
+}
+
+
+table.orta{
+	
+	margin-left:auto; 
+    margin-right:auto;
+	
+	
+}
+
+
+
+
+
